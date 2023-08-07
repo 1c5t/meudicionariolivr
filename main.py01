@@ -1,0 +1,38 @@
+# Criar um dicionário de livros
+livros = {
+    "Livro1": {
+        "autor": "Autor1",
+        "ano_publicacao": 2000
+    },
+    "Livro2": {
+        "autor": "Autor2",
+        "ano_publicacao": 2015
+    },
+    "Livro3": {
+        "autor": "Autor3",
+        "ano_publicacao": 1995
+    }
+}
+
+# Função para exibir informações de um livro
+def exibir_informacoes_livro(livro):
+    print("Título:", livro)
+    print("Autor:", livros[livro]["autor"])
+    print("Ano de Publicação:", livros[livro]["ano_publicacao"])
+    print()
+
+# Exibir informações de todos os livros
+print("Informações dos Livros:")
+for livro in livros:
+    exibir_informacoes_livro(livro)
+
+# Adicionar um novo livro ao dicionário
+novo_livro = "Livro4"
+livros[novo_livro] = {
+    "autor": "Autor4",
+    "ano_publicacao": 2022
+}
+
+# Exibir informações do novo livro
+print("Informações do Novo Livro:")
+exibir_informacoes_livro(novo_livro)
